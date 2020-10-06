@@ -19,6 +19,19 @@ def Numeros():
     pausa=input("Presione una tecla para continuar")
 def Datos():
     print("OPD")
+    #ingresar para n personas donde n es un número ingresado por teclado: nombre y edad. 
+    #calcular y mostrar: cantidad de personas mayores de edad y cantidad de menores de edad. 
+    #subir la modificar a github con el siguiente mensaje: "se programo la opción 2 del menú"
+    #subir la modificación a github con el siguiente mensaje: "se programo la opción 2 del menú"
+    npersonas=int(input("ingrese la cantidad de personas que desea ingresar: "))
+    for x in range(npersonas):
+        edad=int(input("Ingrese edad de la persona: "))
+        if edad>=18:
+            emayor=emayor+1
+        else:
+            emenor=emenor+1
+    print("La cantidad de personas mayores de edad es de: "+str(emayor))
+    print("La cantidad de personas menores de edad es de: "+str(emenor))            
     pausa=input("Presione una tecla para continuar")
 seguir=True
 while (seguir):
